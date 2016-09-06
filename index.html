@@ -3,10 +3,69 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title> Flickr </title>
+    <link rel="stylesheet" href="CSS/overlay.css" />
+    <link rel="stylesheet" href="CSS/helper_1.css" />
+    <link rel="stylesheet" href="CSS/layout.css" />
+    <link rel="stylesheet" href="CSS/gallery.css" />
+    <link rel="stylesheet" href="CSS/google_page_format.css" />
+    <link rel="stylesheet" href="CSS/homepage.css" />
 </head>
 <body>
 
-<h1> Hello World!</h1>
+<header class="island">
+    <h1>Flickr test</h1>
+    <form class="js-form-search form-search" action="/search" method="get" role="search">
+        <label for="query">Search:</label>
+        <input type="search" name="query" id="query" placeholder="Search" required />
+        <input type="submit" value="Search" />
+    </form>
+</header>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <div class="island">
+            <div class="js-gallery gallery">
+                <img onclick="openNav()" src="" class="js-gallery__image" />
+                <button class="js-gallery__arrow--left gallery__arrow gallery__arrow--left">
+                    <span class="visually-hidden">Previous photo</span>
+                </button>
+                <button class="js-gallery__arrow--right gallery__arrow gallery__arrow--right">
+                    <span class="visually-hidden">Next photo</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+
+
+<div class="island thumbnails">
+    <ul onclick="openNav()" class="js-thumbnails__list thumbnails__list"></ul>
+    <ol class="js-thumbnails__pager thumbnails__pager"></ol>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+
+<script src="Javascript/utility.js"></script>
+<script src="Javascript/gallery.js"></script>
+<script src="Javascript/flickr.js"></script>
+<script src="Javascript/main.js"></script>
 
 </body>
 </html>

@@ -3,10 +3,9 @@
  */
 (function(document, window) {
     'use strict';
-    console.log("main.js");
 
     var gallery;
-    var lastSearch = 'Nasa juno';
+    var lastSearch = 'Nasa Juno';
 
     function searchPhotos(text, page) {
         if (text.length === 0) {

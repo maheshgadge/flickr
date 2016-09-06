@@ -5,7 +5,7 @@
     'use strict';
 
     var gallery;
-    var lastSearch = 'Nasa Juno';
+    var lastSearch = 'Spacex Dragon';
 
     function searchPhotos(text, page) {
         if (text.length === 0) {

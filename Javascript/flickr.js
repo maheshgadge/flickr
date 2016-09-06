@@ -5,7 +5,7 @@
 (function(document, window) {
     'use strict';
 
-    var apiKey = '61d31c9ce10e60805a08a775576f46e0';
+    var apiKey = '056ca969bc83687aba4ccaa24f980315';
     var apiURL = 'https://api.flickr.com/services/rest/';
 
     function searchText(parameters) {

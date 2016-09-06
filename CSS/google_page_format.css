@@ -8,15 +8,19 @@
 
 .thumbnails__list li
 {
-    display: inline-block;
     width: 19%;
+overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
     margin-top: 1%;
     margin-right: 1%;
 }
 
 .thumbnail
 {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .thumbnail:hover,
